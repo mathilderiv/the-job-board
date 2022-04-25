@@ -1,23 +1,116 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Title from "./components/Title";
+import Jobs from "./components/Jobs";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="Header">
+        <Header />
+
+        <div className="Title">
+          <Title h1={"The Job Board"} />
+        </div>
+      </div>
+      <div className="Container">
+        <div className="Jobs">
+          <Jobs
+            color="red-border"
+            title={"Full Time Sales Associate - Sydney"}
+            contractType={"CDI"}
+            country={"Australie"}
+            city={"Sydney"}
+          />
+        </div>
+
+        <div className="Jobs">
+          <Jobs
+            color="green-border"
+            title={"Agent de sécurité - Pantin"}
+            contractType={"CDI"}
+            country={"France"}
+            city={"Pantin"}
+          />
+        </div>
+
+        <div className="Jobs">
+          <Jobs
+            color="yellow-border"
+            title={"Responsable d'Atelier (H/F)"}
+            contractType={"CDD"}
+            country={"France"}
+            city={"Paris"}
+          />
+        </div>
+
+        <div className="Jobs">
+          <Jobs
+            color="lightblue-border"
+            title={"Chef de Projets"}
+            contractType={"CDD"}
+            country={"France"}
+            city={"Paris"}
+          />
+        </div>
+
+        <div className="Jobs">
+          <Jobs
+            color="lightpink-border"
+            title={"Développeur React.js"}
+            contractType={"CDI"}
+            country={"France"}
+            city={"Paris"}
+          />
+        </div>
+
+        <div className="Jobs">
+          <Jobs
+            color="red-border"
+            title={"Sales Associate Stockholm"}
+            contractType={"CDI"}
+            country={"Suède"}
+            city={"Stockholm"}
+          />
+        </div>
+
+        <div className="Jobs">
+          <Jobs
+            color="green-border"
+            title={"Vendeur/se - Crans Montana"}
+            contractType={"CDI"}
+            country={"suisse"}
+            city={"Crans-Montana"}
+          />
+        </div>
+
+        <div className="Jobs">
+          <Jobs
+            color="yellow-border"
+            title={"CRM & Data Quality Analyst"}
+            contractType={"CDI"}
+            country={"USA"}
+            city={"New-York"}
+          />
+        </div>
+
+        <div className="Jobs">
+          <Jobs
+            color="lightblue-border"
+            title={"Infirmier"}
+            contractType={"CDI"}
+            country={"France"}
+            city={"Pantin"}
+          />
+        </div>
+      </div>
+
+      <footer>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Made with <span>React</span> at <span>Le Reacteur</span> by{" "}
+          <span>Mathilde RIVERA</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </footer>
     </div>
   );
 }

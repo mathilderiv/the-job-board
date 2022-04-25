@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
+  /* height: 1390px; */
+  width: 1439px;
+  border: lightgrey 1px solid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  height: 100px;
+  width: 1440px;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Title {
   color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 30px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.Jobs {
+  font-weight: bold;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Container {
+  width: 1043px;
+  height: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 196px;
+
+  justify-content: space-around;
+}
+
+.red-border {
+  width: 319px;
+  height: 319px;
+  border: red solid 10px;
+}
+
+.green-border {
+  width: 319px;
+  height: 319px;
+  border: green solid 10px;
+}
+
+.yellow-border {
+  width: 319px;
+  height: 319px;
+  border: yellow solid 10px;
+}
+
+.lightblue-border {
+  width: 319px;
+  height: 319px;
+  border: #039fe3 solid 10px;
+}
+
+.lightpink-border {
+  width: 319px;
+  height: 319px;
+  border: #f8c5af solid 10px;
+}
+
+footer {
+  width: 1439px;
+  height: 65px;
+  border: black solid 1px;
+  background-color: lightgrey;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 20px;
+}
+
+footer span {
+  font-weight: bold;
 }
